@@ -112,7 +112,7 @@ public class PixelGridView extends View {
            PathNode node = tracker.list.head;
             if(!node.hasNext()){
                 Point p = node.getPath().getPoints().get(0);
-                cellChecked[p.getJ()][p.getI()] = !cellChecked[p.getJ() ][p.getI()];
+                cellChecked[p.getY()][p.getX()] = !cellChecked[p.getY() ][p.getX()];
             }
             else {
                 //iterate the nodes in the list
@@ -120,13 +120,13 @@ public class PixelGridView extends View {
                 while (node != tracker.list.tail) {//iterate path points and paint in black
                     for (int i = 0; i < node.getPath().getPoints().size(); i++) {
                         Point p = node.getPath().getPoints().get(i);
-                        cellChecked[p.getJ()][p.getI()] = !cellChecked[p.getJ()][p.getI()];
+                        cellChecked[p.getY()][p.getX()] = !cellChecked[p.getY()][p.getX()];
                     }
                     node = node.getNext();
                 }
                 for (int i = 0; i < node.getPath().getPoints().size(); i++) {
                     Point p = node.getPath().getPoints().get(i);
-                    cellChecked[p.getJ()][p.getI()] = !cellChecked[p.getJ()][p.getI()];
+                    cellChecked[p.getY()][p.getX()] = !cellChecked[p.getY()][p.getX()];
                 }
             }
            invalidate();

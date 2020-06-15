@@ -21,8 +21,8 @@ public class StoreItemRegisterer {
         this.productInStock.setNameOfProduct(itemName);
     }
 
-    public void setLocationPoint(int i,int j) {
-        this.locationPoint.setI(i);
-        this.locationPoint.setJ(j);
+    public void setLocationPoint(int x,int y) {
+        this.locationPoint.setX(x);
+        this.locationPoint.setY(y);
     }
 }

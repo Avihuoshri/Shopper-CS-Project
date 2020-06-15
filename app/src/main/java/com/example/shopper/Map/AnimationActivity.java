@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AnimationActivity extends AppCompatActivity {
-
+//TODO: remove class???
     MapActivity mapLayoutView ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -15,7 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.shopper.DataBaseHandlers.DBShoppingPathAppender;
 import com.example.shopper.DataBaseHandlers.DBStoreBranchRegisterer;
+import com.example.shopper.Map.DrawMapActivity;
+import com.example.shopper.NavigationElements.Path;
 import com.example.shopper.NavigationElements.PathTracker;
+import com.example.shopper.NavigationElements.Point;
 import com.example.shopper.interfaces.StepListener;
 import com.example.shopper.senssors.stepDetector;
 
@@ -90,7 +93,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         BtnDrewPath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GridActivity.class);
+                Path p = new Path();
+                Point point1 = new Point(255,665);
+                p.add(point1);
+                Point point2 = new Point(265,675);
+                p.add(point2);
+                tracker.list.head.setPath(p);
+
+                Intent intent = new Intent(MainActivity.this, DrawMapActivity.class);
                 intent.putExtra("tracker", tracker);
                 startActivity(intent);
             }

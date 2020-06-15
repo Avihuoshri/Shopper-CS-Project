@@ -16,7 +16,7 @@ public class PathTracker implements Record, Navigate, Serializable {
 
     @Override
     public void initList() {
-        startPoint = new Point(50,50);
+        startPoint = new Point(250,660);
         firstPath = new Path();
         list = new CycleLinkedList();
 
