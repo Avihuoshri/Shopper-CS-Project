@@ -32,7 +32,7 @@ public class DrawMapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_draw_map);
 
         Intent intent = getIntent();
-        PathTracker tracker = (PathTracker) intent.getSerializableExtra("tracker");
+       tracker = (PathTracker) intent.getSerializableExtra("tracker");
 
         mlineView = findViewById(R.id.LineView) ;
 
@@ -52,7 +52,7 @@ public class DrawMapActivity extends AppCompatActivity {
             //iterate the nodes in the list
             node = node.getNext();
             while (node != tracker.list.tail) {//iterate path points
-                for (int i = 0; i <= node.getPath().getPoints().size(); i++) {
+                for (int i = 0; i <= node.getPath().getPoints().size() - 1; i++) {
 
                     Point pCurrent = node.getPath().getPoints().get(i);
                     Point pNext = node.getPath().getPoints().get(i+1);
@@ -68,7 +68,7 @@ public class DrawMapActivity extends AppCompatActivity {
             }
 
             //iterate tail node points
-            for (int i = 0; i < node.getPath().getPoints().size(); i++) {
+            for (int i = 0; i < node.getPath().getPoints().size() - 1; i++) {
 
                 Point pCurrent = node.getPath().getPoints().get(i);
                 Point pNext = node.getPath().getPoints().get(i+1);

@@ -94,9 +94,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             @Override
             public void onClick(View v) {
                 Path p = new Path();
-                Point point1 = new Point(255,665);
+                Point point1 = new Point(400 , 1000);
                 p.add(point1);
-                Point point2 = new Point(265,675);
+                Point point2 = new Point(253 , 830);
                 p.add(point2);
                 tracker.list.head.setPath(p);
 
