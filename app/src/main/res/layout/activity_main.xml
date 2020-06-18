@@ -1,79 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
-    <TextView
-        android:id="@+id/tv_steps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        />
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="328dp"
+        app:srcCompat="@drawable/logo"/>
 
     <Button
-        android:id="@+id/btn_start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="next product"
-        />
-
-    <Button
-        android:id="@+id/btn_stop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="take  product"
-        />
-
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
-
-    <EditText
-        android:id="@+id/edit_text_product"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="insert product"/>
-
-    <Button
-        android:id="@+id/button_save"
+        android:id="@+id/button_on_shop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_text"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="save shopping route"
-        android:onClick="save"/>
+        android:text="I am on shop - need directions" />
 
     <Button
-        android:id="@+id/button_show_route"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_create_list"
+        android:layout_width="234dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_save"
-        android:layout_below="@+id/button_save"
+        android:layout_below="@+id/button_on_shop"
+        android:layout_alignStart="@+id/button_on_shop"
         android:layout_marginTop="17dp"
-        android:text="Show shopping route" />
+        android:text="Create a new shopping list" />
 
-    <Button
-        android:id="@+id/button_Show_products"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_save"
-        android:layout_below="@+id/button_save"
-        android:layout_marginTop="17dp"
-        android:text="Show products location" />
-
-    <Button
-        android:id="@+id/btn_drew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_save"
-        android:layout_below="@+id/button_save"
-        android:layout_marginTop="17dp"
-        android:text="Show path on map" />
 </LinearLayout>

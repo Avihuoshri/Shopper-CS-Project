@@ -18,7 +18,7 @@ public class LineView extends View {
     private Paint paint = new Paint();
     PointF pointA , pointB ;
     private ArrayList<Line> lines  = new ArrayList<>() ;
-    ;
+
 
     public LineView(Context context) {
         super(context);

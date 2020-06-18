@@ -31,7 +31,7 @@ public class DrawMapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw_map);
 
-        Intent intent = getIntent();
+         intent = getIntent();
        tracker = (PathTracker) intent.getSerializableExtra("tracker");
 
         mlineView = findViewById(R.id.LineView) ;

@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.shopper.GridActivity"/>
-        <activity android:name="com.example.shopper.Map.AnimationActivity"/>
-        <activity android:name="com.example.shopper.Map.DrawMapActivity"/>
         <activity android:name="com.example.shopper.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.shopper.GridActivity"/>
+        <activity android:name="com.example.shopper.Map.AnimationActivity"/>
+        <activity android:name="com.example.shopper.Map.DrawMapActivity"/>
+        <activity android:name="com.example.shopper.OnShopActivity"/>
+        <activity android:name="com.example.shopper.ShopingListActivity"/>
     </application>
 
 </manifest>

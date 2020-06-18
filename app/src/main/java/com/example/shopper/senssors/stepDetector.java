@@ -1,6 +1,6 @@
 package com.example.shopper.senssors;
 
-import com.example.shopper.MainActivity;
+import com.example.shopper.OnShopActivity;
 import com.example.shopper.interfaces.StepListener;
 
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class stepDetector {
     private ArrayList<Float> degrees = new ArrayList<Float>();
     private float degree;
 
-    public void registerListener(MainActivity listener) {
+    public void registerListener(OnShopActivity listener) {
         this.listener = listener;
     }
 
